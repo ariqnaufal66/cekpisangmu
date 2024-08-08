@@ -1,0 +1,47 @@
+html, body {
+    height: 100%; /* Pastikan body memenuhi tinggi layar */
+    margin: 0; /* Hapus margin default */
+    background: url('bgpisang.jpg') no-repeat center center fixed; 
+    background-size: cover; /* Pastikan gambar mencakup seluruh layar */
+}
+
+body {
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+    margin: 0;
+    text-align: center;
+    font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    flex-direction: column; /* Jika Anda ingin elemen diatur secara vertikal */
+    color: rgb(255, 255, 255);
+}
+
+#content-container {
+    background-color: rgba(83, 84, 82, 0.8); /* Warna latar belakang semi-transparan */
+    padding: 20px; /* Padding sekitar teks */
+    border-radius: 8px; /* Sudut melengkung */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Bayangan */
+}
+
+/* Sembunyikan elemen input file */
+#image-selector {
+    display: none;
+}
+
+/* Gaya untuk tombol kustom */
+.custom-file-upload {
+    display: inline-block;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #4CAF50; /* Warna latar belakang */
+    color: white; /* Warna teks */
+    border: none; /* Hilangkan border */
+    border-radius: 4px; /* Radius border */
+    font-size: 16px; /* Ukuran font */
+    transition: background-color 0.3s; /* Transisi untuk perubahan warna */
+}
+
+/* Gaya hover untuk tombol kustom */
+.custom-file-upload:hover {
+    background-color: #F2C116; /* Warna latar belakang saat di-hover */
+}
